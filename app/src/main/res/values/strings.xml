@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ReposEnergy</string>
+
+    <string name="fetching_data">Fetch Data</string>
+    <string name="getting_db">Getting database</string>
+    <string name="create_new_db">Create new database</string>
+    <string name="unknow_view_model">Unknown View Model class name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_home">News List</string>
+    <string name="title_newsdetails">News Details</string>
+    <string name="newsdetails">NewsDetails</string>
+    <string name="news_heading">News Heading</string>
+    <string name="nav_up">Navigate</string>
+    <string name="news">News</string>
+
+</resources>

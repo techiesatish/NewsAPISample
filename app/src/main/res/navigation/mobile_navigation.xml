@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_list">
+
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="com.reposenergy.ui.fragments.newslist.NewsListFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_news_list" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_newsdetails"
+            app:destination="@id/navigation_newsdetails"
+            app:enterAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_newsdetails"
+        android:name="com.reposenergy.ui.fragments.newsdetails.NewsDetailsFragment"
+        android:label="@string/title_newsdetails"
+        tools:layout="@layout/fragment_news_details">
+        <argument
+            android:name="@string/newsdetails"
+            app:argType="com.reposenergy.data.models.Article" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_home"
+            app:destination="@id/navigation_list"
+            app:enterAnim="@anim/nav_default_pop_enter_anim" />
+    </fragment>
+
+</navigation>
